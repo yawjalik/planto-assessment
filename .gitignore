@@ -1,0 +1,59 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.DS_Store
+# dependencies
+/**/*/node_modules
+/**/*/.pnp
+csv-editor-fe/.pnp.js
+
+# JetBrains IDE files
+csv-editor-fe/.idea/
+
+# testing
+/**/*/coverage
+
+# next.js
+/**/*/.next/
+/**/*/out/
+
+# production
+/**/*/build
+
+# misc
+/**/*/.DS_Store
+*.pem
+
+# debug
+csv-editor-fe/npm-debug.log*
+csv-editor-fe/yarn-debug.log*
+csv-editor-fe/yarn-error.log*
+csv-editor-fe/.pnpm-debug.log*
+
+# local env files
+csv-editor-fe/.env*.local
+
+# vercel
+csv-editor-fe/.vercel
+
+# typescript
+csv-editor-fe/*.tsbuildinfo
+csv-editor-fe/next-env.d.ts
+
+
+/**/*/.idea/
+csv-editor.be/core.iml
+/**/*/target/*
+/**/*/target/*
+.idea
+/**/*.iml
+/**/*.zip
+/**/*/planto-java.iml
+/**/*.pdf
+!csv-editor-be/src/test/resources/**/*.pdf
+/**/*.auth
+/**/*.pem
+/**/*.csv
+!/**/resources/*.csv
+/*.xlsx
+/**/*.tar.gz
+/**/*.jar
