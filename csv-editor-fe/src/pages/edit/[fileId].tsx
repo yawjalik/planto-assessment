@@ -40,8 +40,9 @@ export default function Page() {
 
       updateCsv(parseInt(fileId), csvEntries)
         .then(() => {
-          toast.success(`Successfully updated ${csvFile?.fileName}`);
-          router.push('/').then();
+          router.push('/').then(() => {
+            toast.success(`Successfully updated ${csvFile?.fileName}`);
+          });
         })
         .catch((err) => {
           console.error(err);
@@ -120,9 +121,7 @@ export default function Page() {
               <Link href="/">
                 <Button>Cancel</Button>
               </Link>
-              <InputButton id={'submit-btn'} type={'submit'}>
-                Save and go back
-              </InputButton>
+              <Button type={'submit'}>Save and go back</Button>
             </ButtonContainer>
           </form>
         </Box>
