@@ -19,5 +19,6 @@ public class CsvRow {
     private Long id;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OrderBy("id")
     private List<CsvEntry> csvEntries;
 }
